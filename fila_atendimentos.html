@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fila de Atendimentos - Sistema de Senhas</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        .btn {
+            width: 100%;
+        }
+        .container .card {
+            max-width: 250px;
+            float: left;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html">Sistema de Senhas</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Cadastros
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./cadastro_operador.html">Cadastro de Operadores</a></li>
+              <li><a class="dropdown-item" href="./cadastro_tipo_senha.html">Cadastro de Senhas</a></li>
+              <li><a class="dropdown-item" href="./cadastro_guiche.html">Cadastro de Balcões</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Relatórios
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./relatorio_atendimentos.html">Relatórios de Operadores</a></li>
+              <li><a class="dropdown-item" href="./fila_atendimentos.html">Relatórios de Senhas</a></li>
+              <li><a class="dropdown-item" href="#">Relatórios de Balcões</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-gear"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Ajuste de Operadores</a></li>
+              <li><a class="dropdown-item" href="#">Ajuste de Senhas</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Sair</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <div class="container text-center">
+      <div class="card text-center">
+        <div class="card-header">
+          ATENDIMENTO GERAL
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">G002</h5>
+          <p class="card-text">Atendimento Geral</p>
+          <p class="card-text">03/05/2024 15:00</p>
+          <a href="#" class="btn btn-primary">CHAMAR</a>
+        </div>
+        <div class="card-footer text-body-secondary">
+          15 min
+        </div>
+      </div>
+      <div class="card text-center">
+        <div class="card-header">
+          ATENDIMENTO PRIORITÁRIO
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">P040</h5>
+          <p class="card-text">Atendimento Prioritário</p>
+          <p class="card-text">03/05/2024 16:11</p>
+          <a href="#" class="btn btn-primary">CHAMAR</a>
+        </div>
+        <div class="card-footer text-body-secondary">
+          15 min
+        </div>
+      </div>
+      <div class="card text-center">
+        <div class="card-header">
+          ATENDIMENTO NORMAL
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">N012</h5>
+          <p class="card-text">Atendimento Normal</p>
+          <p class="card-text">03/05/2024 12:00</p>
+          <a href="#" class="btn btn-primary">CHAMAR</a>
+        </div>
+        <div class="card-footer text-body-secondary">
+          15 min
+        </div>
+      </div>
+    </div>
+      <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

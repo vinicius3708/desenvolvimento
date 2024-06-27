@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Operador - Sistema de Senhas</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+
+    </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html">Sistema de Senhas</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Cadastros
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./cadastro_operador.html">Cadastro de Operadores</a></li>
+              <li><a class="dropdown-item" href="./cadastro_tipo_senha.html">Cadastro de Senhas</a></li>
+              <li><a class="dropdown-item" href="./cadastro_guiche.html">Cadastro de Balcões</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Relatórios
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./relatorio_atendimentos.html">Relatórios de Operadores</a></li>
+              <li><a class="dropdown-item" href="./fila_atendimentos.html">Relatórios de Senhas</a></li>
+              <li><a class="dropdown-item" href="#">Relatórios de Balcões</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-gear"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Ajuste de Operadores</a></li>
+              <li><a class="dropdown-item" href="#">Ajuste de Senhas</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Sair</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <div class="container">
+        <h1>Cadastro de Operadores</h1>
+        <form>
+            <div class="mb-3 col-3">
+              <label for="InputCodigo" class="form-label">Código:</label>
+              <input disabled type="text" class="form-control" id="InputCodigo" aria-describedby="InserirCodigo">
+            </div>
+            <div class="mb-3">
+                <div class="row">
+                    <div class="col-2"><label for="InputColaborador" class="form-label">Colaborador:</label></div>
+                    <div class="col-1"><input type="text" class="form-control" id="InputColaborador"></div>
+                    <div class="col-1"><button type="submit" class="btn btn-primary"><i class="bi bi-search"></i></button></div>
+                    <div class="col-1"><button type="submit" class="btn btn-primary"><i class="bi bi-pencil-square"></i></button></div>
+                    <div class="col-3"><input disabled type="text" class="form-control" id="OutputColaborador"></div>
+                    <div class="col-1"><button type="submit" class="btn btn-primary">Submit</button></div>
+                </div>
+            </div>
+            <div class="mb-3 col-3">
+                <label for="InputNome" class="form-label">Nome:</label>
+                <input type="text" class="form-control" id="InputNome" aria-describedby="InserirNome">
+            </div>
+            <div class="mb-3 col-3">
+                <label for="InputSenha" class="form-label">Senha:</label>
+                <input type="password" class="form-control" id="InputSenha" aria-describedby="InserirSenha">
+            </div>
+            <div class="mb-3 col-3">
+                <label for="InputConfirmacaoSenha" class="form-label">Confirmar senha:</label>
+                <input type="password" class="form-control" id="InputConfirmacaoSenha" aria-describedby="InserirConfirmacaoSenha">
+            </div>
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">#
+                    </th>
+                    <th scope="col">Nome</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row"><input class="form-check-input" type="checkbox" value="" id="flexCheckChecked2" checked></th>
+                    <td><label class="form-check-label" for="flexCheckChecked2">Cancelar Itens</label></td>
+                  </tr>
+                  <tr>
+                    <th scope="row"><input class="form-check-input" type="checkbox" value="" id="flexCheckChecked3" checked></th>
+                    <td><label class="form-check-label" for="flexCheckChecked3">Menu Gerência</label></td>
+                  </tr>
+                  <tr>
+                    <th scope="row"><input class="form-check-input" type="checkbox" value="" id="flexCheckChecked4" checked></th>
+                    <td><label class="form-check-label" for="flexCheckChecked4">Menu Operadores</label></td>
+                  </tr>
+                </tbody>
+              </table>
+            <button type="submit" class="btn btn-primary">Salvar</button>
+          </form>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

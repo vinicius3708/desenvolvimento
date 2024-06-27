@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Guichê - Sistema de Senhas</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+
+    </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html">Sistema de Senhas</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Cadastros
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./cadastro_operador.html">Cadastro de Operadores</a></li>
+              <li><a class="dropdown-item" href="./cadastro_tipo_senha.html">Cadastro de Senhas</a></li>
+              <li><a class="dropdown-item" href="./cadastro_guiche.html">Cadastro de Balcões</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Relatórios
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./relatorio_atendimentos.html">Relatórios de Operadores</a></li>
+              <li><a class="dropdown-item" href="./fila_atendimentos.html">Relatórios de Senhas</a></li>
+              <li><a class="dropdown-item" href="#">Relatórios de Balcões</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-gear"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Ajuste de Operadores</a></li>
+              <li><a class="dropdown-item" href="#">Ajuste de Senhas</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Sair</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <div class="container">
+        <h1>Cadastro de Guichê</h1>
+        <form class="row">
+          <div class="col">
+            <div class="mb-3 col-3">
+              <label for="InputCodigoBalcao" class="form-label">Código:</label>
+              <input disabled type="text" class="form-control" id="InputCodigo" aria-describedby="InserirCodigo">
+            </div>
+            <div class="mb-3">
+                <div class="row">
+                    <div class="col-2"><label for="InputBalcao" class="form-label">Balcão:</label></div>
+                    <div class="col-1"><input type="text" class="form-control" id="InputBalcao"></div>
+                </div>
+            </div>
+            <div class="mb-3 col-3">
+                <label for="InputNumeroBalcao" class="form-label">Número:</label>
+                <input type="text" class="form-control" id="InputNumeroBalcao" aria-describedby="InserirNumeroBalcao">
+            </div>
+          </div>
+          <div class="col">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">
+                    </th>
+                    <th scope="col">Tipos de Atendimento</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row"><input class="form-check-input" type="checkbox" value="" id="CheckBoxGeral" checked></th>
+                    <td><label class="form-check-label" for="CheckBoxGeral">Geral</label></td>
+                  </tr>
+                  <tr>
+                    <th scope="row"><input class="form-check-input" type="checkbox" value="" id="CheckBoxPrioritario" checked></th>
+                    <td><label class="form-check-label" for="CheckBoxPrioritario">Prioritário</label></td>
+                  </tr>
+                  <tr>
+                    <th scope="row"><input class="form-check-input" type="checkbox" value="" id="CheckBoxNormal" checked></th>
+                    <td><label class="form-check-label" for="CheckBoxNormal">Normal</label></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <button type="submit" class="btn btn-primary">Salvar</button>
+          </form>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col"></th>
+                <th scope="col">Balcão</th>
+                <th scope="col">Número</th>
+                <th scope="col">Opções</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Balcão</td>
+                <td>01</td>
+                <td><div class="btn-group" role="group" aria-label="Basic example">
+                  <button type="button" class="btn btn-primary"><i class="bi bi-pencil-square"></i></button>
+                  <button type="button" class="btn btn-primary"><i class="bi bi-trash"></i></button>
+                  <button type="button" class="btn btn-primary"><i class="bi bi-eye"></i></button>
+                </div></td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Balcão</td>
+                <td>02</td>
+                <td><div class="btn-group" role="group" aria-label="Basic example">
+                  <button type="button" class="btn btn-primary"><i class="bi bi-pencil-square"></i></button>
+                  <button type="button" class="btn btn-primary"><i class="bi bi-trash"></i></button>
+                  <button type="button" class="btn btn-primary"><i class="bi bi-eye"></i></button>
+                </div></td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Balcão</td>
+                <td>03</td>
+                <td><div class="btn-group" role="group" aria-label="Basic example">
+                  <button type="button" class="btn btn-primary"><i class="bi bi-pencil-square"></i></button>
+                  <button type="button" class="btn btn-primary"><i class="bi bi-trash"></i></button>
+                  <button type="button" class="btn btn-primary"><i class="bi bi-eye"></i></button>
+                </div></td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
